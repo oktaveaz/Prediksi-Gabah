@@ -12,8 +12,8 @@ st.title("Prediksi Hasil Produksi Gabah Basah")
 # Input dari pengguna
 st.header("Masukkan Data Pertanian Anda")
 
-luas_lahan = st.number_input("Luas Lahan (dalam m\u00b2) (min. 500)", min_value=500.0, step=0.1)
-ph_tanah = st.slider("pH Tanah", min_value=5.0, max_value=10.0, step=0.1)
+luas_lahan = st.number_input("Luas Lahan (dalam m\u00b2) (min. 500)", min_value=500.0, max_value=5000, step=0.1)
+ph_tanah = st.slider("pH Tanah", min_value=5.0, max_value=8.0, step=0.1)
 varietas = st.selectbox("Varietas", ["inpari_32", "srinuk", "C4", "sunggal"])
 
 df_varietas = np.array([
